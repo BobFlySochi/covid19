@@ -14,7 +14,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlin.coroutines.CoroutineContext
 
-class GlobalFagment:Fragment(), CoroutineScope {
+class GlobalFagment : Fragment(), CoroutineScope {
     override val coroutineContext = Dispatchers.Main
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -27,18 +27,23 @@ class GlobalFagment:Fragment(), CoroutineScope {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val repository = CovidRepository()
         launch {
-            val global = repository.getSummary().await()
-            delay(1000)
+            val summary = repository.getSummary().await()
+
+
             loader.visibility = View.GONE
             globalData.visibility = View.VISIBLE
-
-            global?.let {
-                newConfirmed.text =getString(R.string.new_confirmed_template).format(it.newConfirmed)
-                newDeaths.text = getString(R.string.new_deaths_template).format(it.newDeaths)
-                newRecovered.text =getString(R.string.new_recovered_template).format(it.newRecovered)
-                totalConfirmed.text =getString(R.string.total_comfirmed_template).format(it.totalConfirmed)
+            summary?.let {
+                it.global.let {
+                    newConfirmed.text =
+                        getString(R.string.new_confirmed_template).format(it.newConfirmed)
+                    newDeaths.text = getString(R.string.new_deaths_template).format(it.newDeaths)
+                    newRecovered.text =
+                        getString(R.string.new_recovered_template).format(it.newRecovered)
+                    totalConfirmed.text =
+                        getString(R.string.total_comfirmed_template).format(it.totalConfirmed)
+                }
+                countriesList.adapter = CountriesGlobalDataAdapter(it.countries)
             }
         }
-
     }
 }
