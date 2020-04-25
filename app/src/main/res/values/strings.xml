@@ -6,6 +6,9 @@
     <string name="all_deaths_template">Deaths: %d</string>
     <string name="new_recovered_template">New recovered: %d</string>
     <string name="all_recovered_template">Recovered: %d</string>
-    <string name="total_comfirmed_template">Total confirmed: %d</string>
+    <string name="total_confirmed_template">Total confirmed: %d</string>
+    <string name="total_deaths_template">Total deaths: %d</string>
+    <string name="total_recovered_template">Total recovered: %d</string>
+
 
 </resources>

@@ -40,7 +40,7 @@ class GlobalFagment : Fragment(), CoroutineScope {
                     newRecovered.text =
                         getString(R.string.new_recovered_template).format(it.newRecovered)
                     totalConfirmed.text =
-                        getString(R.string.total_comfirmed_template).format(it.totalConfirmed)
+                        getString(R.string.total_confirmed_template).format(it.totalConfirmed)
                 }
                 countriesList.adapter = CountriesGlobalDataAdapter(it.countries)
             }

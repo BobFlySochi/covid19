@@ -27,6 +27,11 @@ class CountriesGlobalDataAdapter(
         fun bind(countryGlobalData: CountryGlobalData) = itemView.apply {
             countryName.text = countryGlobalData.country
             countryNewConfirmed.text = resources.getString(R.string.new_confirmed_template).format(countryGlobalData.newConfirmed)
+            countryNewDeaths.text = resources.getString(R.string.new_deaths_template).format(countryGlobalData.newDeaths)
+            countryNewRecovered.text = resources.getString(R.string.new_recovered_template).format(countryGlobalData.newConfirmed)
+            countryTotalConfirmed.text = resources.getString(R.string.total_confirmed_template).format(countryGlobalData.totalConfirmed)
+            countryTotalDeaths.text = resources.getString(R.string.total_deaths_template).format(countryGlobalData.totalDeaths)
+            countryTotalRecovered.text = resources.getString(R.string.total_recovered_template).format(countryGlobalData.totalRecovered)
         }
     }
 }

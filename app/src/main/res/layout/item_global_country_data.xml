@@ -22,6 +22,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
-        tools:text="New Confirmed: 10"
+        tools:text="New Confirmed: 0"
         />
+    <TextView
+        android:id="@+id/countryNewDeaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        tools:text="New Deaths: 0"
+        />
+    <TextView
+        android:id="@+id/countryNewRecovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        tools:text="New Recovered: 0"
+        />
+    <TextView
+        android:id="@+id/countryTotalConfirmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        tools:text="Total Confirmed: 0"
+        />
+
+    <TextView
+        android:id="@+id/countryTotalDeaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        tools:text="Total Deaths: 0"
+        />
+    <TextView
+        android:id="@+id/countryTotalRecovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        tools:text="Total Recovered: 0"
+        />
+
 </LinearLayout>
