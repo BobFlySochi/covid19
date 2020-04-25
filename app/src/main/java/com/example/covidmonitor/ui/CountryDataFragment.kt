@@ -14,8 +14,8 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlin.coroutines.CoroutineContext
 
-class CountryDataFragment:Fragment(), CoroutineScope {
-    override val coroutineContext=Dispatchers.Main
+class CountryDataFragment : Fragment(), CoroutineScope {
+    override val coroutineContext = Dispatchers.Main
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -29,10 +29,8 @@ class CountryDataFragment:Fragment(), CoroutineScope {
 
         launch {
             val countryCases = repo.getRussiaLiveData().await()
-
-            delay(1000)
-            loader.visibility =View.GONE
-            countryData.visibility= View.VISIBLE
+            loader.visibility = View.GONE
+            countryData.visibility = View.VISIBLE
 
             countryCases?.let {
                 country.text = it.country

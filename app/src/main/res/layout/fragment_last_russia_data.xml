@@ -7,11 +7,13 @@
     xmlns:tools="http://schemas.android.com/tools">
     <LinearLayout
         android:id="@+id/countryLastData"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:visibility="visible"
         android:orientation="vertical"
+        android:background="#7A6BBEFF"
+        android:padding="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +25,7 @@
             android:id="@+id/countryByCountryLast"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/holo_orange_light"
             android:textSize="30sp"
             android:textStyle="bold"
             tools:text="Russia" />
@@ -32,7 +34,7 @@
             android:id="@+id/confirmedByCountryLast"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="30sp"
             android:textStyle="bold"
             tools:text="Confirmed" />
@@ -40,7 +42,7 @@
             android:id="@+id/deathsByCountryLast"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
+            android:textColor="#F89A9A"
             android:textSize="30sp"
             android:textStyle="bold"
             tools:text="Deaths" />
@@ -48,7 +50,7 @@
             android:id="@+id/recoveredByCountryLast"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="30sp"
             android:textStyle="bold"
             tools:text="Recovered" />

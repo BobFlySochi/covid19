@@ -5,15 +5,16 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="4dp"
-    android:background="@android:color/holo_blue_light"
+    android:background="#690F4CE8"
     android:layout_marginBottom="5dp"
     xmlns:tools="http://schemas.android.com/tools">
     <TextView
         android:id="@+id/countryName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_orange_light"
         android:textStyle="bold"
         tools:text="Country"
         />
@@ -21,28 +22,32 @@
         android:id="@+id/countryNewConfirmed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
+        android:paddingLeft="10sp"
         tools:text="New Confirmed: 0"
         />
     <TextView
         android:id="@+id/countryNewDeaths"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
+        android:textColor="#F89A9A"
+        android:paddingLeft="10sp"
         tools:text="New Deaths: 0"
         />
     <TextView
         android:id="@+id/countryNewRecovered"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
+        android:paddingLeft="10sp"
         tools:text="New Recovered: 0"
         />
     <TextView
         android:id="@+id/countryTotalConfirmed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
+        android:paddingLeft="10sp"
         tools:text="Total Confirmed: 0"
         />
 
@@ -50,14 +55,16 @@
         android:id="@+id/countryTotalDeaths"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
+        android:textColor="#F89A9A"
+        android:paddingLeft="10sp"
         tools:text="Total Deaths: 0"
         />
     <TextView
         android:id="@+id/countryTotalRecovered"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
+        android:paddingLeft="10sp"
         tools:text="Total Recovered: 0"
         />
 

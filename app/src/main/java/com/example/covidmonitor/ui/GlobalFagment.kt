@@ -28,8 +28,6 @@ class GlobalFagment : Fragment(), CoroutineScope {
         val repository = CovidRepository()
         launch {
             val summary = repository.getSummary().await()
-
-
             loader.visibility = View.GONE
             globalData.visibility = View.VISIBLE
             summary?.let {

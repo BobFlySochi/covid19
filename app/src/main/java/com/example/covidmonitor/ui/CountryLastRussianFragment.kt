@@ -14,8 +14,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
-class CountryLastRussianFragment: Fragment(), CoroutineScope {
-    override val coroutineContext= Dispatchers.Main
+class CountryLastRussianFragment : Fragment(), CoroutineScope {
+    override val coroutineContext = Dispatchers.Main
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -24,15 +24,14 @@ class CountryLastRussianFragment: Fragment(), CoroutineScope {
     ): View? {
         return inflater.inflate(R.layout.fragment_last_russia_data, container, false)
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val repoLastDate = CovidRepository()
 
         launch {
             val countryLastCases = repoLastDate.getRussiaLastData().await()
-
-            delay(1000)
-            loader.visibility =View.GONE
-            countryByCountryLast.visibility= View.VISIBLE
+            loader.visibility = View.GONE
+            countryByCountryLast.visibility = View.VISIBLE
             deathsByCountryLast.visibility = View.VISIBLE
             confirmedByCountryLast.visibility = View.VISIBLE
             recoveredByCountryLast.visibility = View.VISIBLE
@@ -40,8 +39,10 @@ class CountryLastRussianFragment: Fragment(), CoroutineScope {
             countryLastCases?.let {
                 countryByCountryLast.text = it.country
                 deathsByCountryLast.text = getString(R.string.all_deaths_template).format(it.deaths)
-                confirmedByCountryLast.text = getString(R.string.all_confirmed_template).format(it.confirmed)
-                recoveredByCountryLast.text = getString(R.string.all_recovered_template).format(it.recovered)
+                confirmedByCountryLast.text =
+                    getString(R.string.all_confirmed_template).format(it.confirmed)
+                recoveredByCountryLast.text =
+                    getString(R.string.all_recovered_template).format(it.recovered)
 
 
             }

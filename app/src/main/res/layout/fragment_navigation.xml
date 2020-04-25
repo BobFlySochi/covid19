@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:id="@+id/globalData"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
@@ -21,39 +21,49 @@
 
         <Button
             android:id="@+id/btnGlobalData"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="Global"
-            android:textColor="@android:color/black"
+            android:background="@drawable/btn_background"
+            android:padding="15dp"
+            android:text="Global Overview"
+            android:textColor="@android:color/holo_orange_light"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnRussianData"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="Russian"
-            android:textColor="@android:color/black"
+            android:background="@drawable/btn_background"
+            android:padding="15dp"
+            android:text="New confirmed Russians"
+            android:textColor="@android:color/holo_orange_light"
             android:textSize="20sp"
             android:textStyle="bold" />
+
         <Button
             android:id="@+id/btnLastRussianData"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_background"
+            android:padding="15dp"
             android:text="Last Russian Data"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/holo_orange_light"
             android:textSize="20sp"
             android:textStyle="bold" />
+
         <Button
             android:id="@+id/btnLastUkraineData"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_background"
+            android:padding="15dp"
             android:text="Last Ukrainian Data"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/holo_orange_light"
             android:textSize="20sp"
             android:textStyle="bold" />
 

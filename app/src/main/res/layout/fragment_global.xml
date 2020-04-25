@@ -31,37 +31,41 @@
                     android:id="@+id/newConfirmed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    tools:text="New Confirmed: 10000" />
+                    tools:text="New Confirmed: 10000"
+                    tools:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/newDeaths"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/black"
+                    android:textColor="#F89A9A"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    tools:text="New Death: 10000" />
+                    tools:text="New Death: 10000"
+                    tools:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/newRecovered"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    tools:text="New Recovered: 10000" />
+                    tools:text="New Recovered: 10000"
+                    tools:textColor="@android:color/black"/>
 
                 <TextView
                     android:id="@+id/totalConfirmed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    tools:text="Total Confirmed: 10000" />
+                    tools:text="Total Confirmed: 10000"
+                    tools:textColor="@android:color/black"/>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/countriesList"
